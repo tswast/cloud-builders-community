@@ -1,6 +1,7 @@
 ---
 steps:
   - name: gcr.io/cloud-builders/docker
+    dir: shellcheck
     args: ['build', '-t', 'gcr.io/$PROJECT_ID/shellcheck', '.']
 
 images: ['gcr.io/$PROJECT_ID/shellcheck']
